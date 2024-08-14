@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title><%= directory %> - Art Gallery</title>
+</head>
+
+<header>
+    <h1><%= directory %></h1>
+    <title><%= directory %> - Art Gallery</title>
+    <link rel="stylesheet" href="/gallery.css">
+    <%- include('../partials/header'); %>
+</header>
+
+
+<body>
+    <a href="/">Back to Directories</a>
+    <div class="gallery" id="gallery">
+        <% if (Array.isArray(images)) { %>
+            <% images.forEach(function(image) { %>
+                <div class="gallery-item">
+                    <img src="/api/artwork/<%= directory %>/<%= image %>" alt="<%= image %>">
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No images found in this directory.</p>
+        <% } %>
+       
+    </div>
+</body>
+
+
+<footer>
+
+    <%- include('../partials/footer'); %>
+
+</footer>
+
+
+</html>

@@ -1,0 +1,25 @@
+ul .directory-list   {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.listing {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top; 
+  border: 1px dotted #FFEB3B;
+  margin: 5px;
+    
+}
+.folder{
+  height: 200Px;
+  width: 200px;
+}
+.listing :hover {
+  color: #03dac6;
+  font-weight: bold;
+  padding : 5px;
+}
+

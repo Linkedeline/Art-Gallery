@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+    <title>Art Gallery</title>
+    
+</head>
+
+<header>
+
+  <h1>Art Gallery Directories</h1>
+  <%- include('../partials/header'); %>
+</header>
+
+<body>
+  <link rel="stylesheet" href="/art_index.css">
+
+  <ul class="directory-list">
+    <% directories.forEach(function(directory) { %>
+      <li class="listing">
+        <a href="/gallery/<%= encodeURIComponent(directory) %>">
+          <div class="text"> <%= directory %></div>
+
+          <img  class="folder" src="folder.png" alt="<%= directory %>"></img>
+          
+        </a>
+        
+      </li>
+    <% }); %>
+  </ul>
+</body>
+ <footer>
+
+    <%- include('../partials/footer'); %>
+
+</footer>
+
+
+</html>

@@ -1,0 +1,48 @@
+header {
+  background: #1e1e1e;
+  color: #bb86fc;
+  padding-top: 15px;
+  min-height: 30px;            
+  border-bottom: #bb86fc 3px solid;
+  
+}
+
+header a {
+  color: #e0e0e0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul 
+{
+  background-color: #36394B;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #branding {
+  float: left;
+}       
+header #branding h1 {            
+  margin: 0;
+}
+header nav {
+  margin: 0;
+  padding: 0;
+}
+header .highlight, header .current a {
+  color: #bb86fc;
+  font-weight: bold;
+}
+header a:hover {
+  color: #03dac6;
+  font-weight: bold;
+}
+ 
