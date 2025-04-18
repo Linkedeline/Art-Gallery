@@ -62,13 +62,6 @@ app.get('/art', async (req, res) => {
   }
 });
 
-const NSFW_ART="/run/media/linkydeline/extra/Pictures/project/nsfw/"
-app.get('/nsfw', async (req, res) => {
-  try {
-    chosenPath = NSFW_ART;
-    artworkStructure = await getImageTree(chosenPath);
-    res.render('pages/art_index', { directories: Object.keys(artworkStructure) });
-    
      
   } catch (error) {
      console.error('Error getting artwork structure:', error);
